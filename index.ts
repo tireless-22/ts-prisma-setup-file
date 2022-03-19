@@ -12,6 +12,10 @@
 // use npx prisma migrate dev --name init to migrate that changes to the database
 // use can either check the sql workbench or you can check in the prisma studio
 // npx prisma studio
+// ts node is help full to execute the ts files directly instead of doing those stepwise
+// like converting the ts to js and again exectuting the js files
+// nodemon index.ts
+// to execute the file
 
 import express,{Request,Response} from "express"
 
@@ -67,7 +71,7 @@ app.delete("/:id", async (req: Request, res: Response) => {
 			
 		}
 	});
-	res.json(deletedUser);
+	res.json("hello");
 
 	
 	
